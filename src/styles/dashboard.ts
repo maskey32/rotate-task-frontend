@@ -43,6 +43,13 @@ export const dashboardStyles = {
         display: 'flex',
         flexDirection: 'column',
         gap: '24px',
-        overflowY: 'auto'
-    })
+        overflowY: 'auto',
+        px: '30px',
+        py: '20px',
+        shadow: 'sm',
+        bg: 'white',
+        borderRadius: '15px',
+        border: '1px solid',
+        borderColor: 'gray.200',
+    }),
 };
