@@ -1,7 +1,13 @@
-import { Box } from "@chakra-ui/react";
+import { dashboardStyles } from "../styles/dashboard";
+import { LeftPane, RightPane } from "../components/Dashboard/main";
 
-export default function DashboardPage() {
+export default function Dashboard() {
   return (
-    <Box>Dashboard page</Box>
+    <main className={dashboardStyles.container}>
+      <div className={dashboardStyles.content}>
+        <LeftPane />
+        <RightPane />
+      </div>
+    </main>
   );
 }
