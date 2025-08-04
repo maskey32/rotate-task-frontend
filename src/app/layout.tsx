@@ -27,7 +27,7 @@ export default function RootLayout({
                 <Box
                   display="flex" 
                   minHeight="100vh"
-                  bg="gray.50"
+                  bg="#FAFAFA"
                   className={css({
                     _dark: {
                       backgroundColor: 'gray.900'
