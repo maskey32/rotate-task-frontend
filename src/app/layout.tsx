@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Box } from "@chakra-ui/react";
 
 import "./globals.css";
 import { geistSans, publicSans } from "../config/font";
@@ -23,20 +22,20 @@ export default function RootLayout({
         <ReactQueryProvider>
           <ThemeProvider>
             <Provider>
-              <Container>
-                <Box
-                  display="flex" 
-                  minHeight="100vh"
-                  bg="#FAFAFA"
-                  className={css({
-                    _dark: {
-                      backgroundColor: 'gray.900'
-                    }
-                  })}
-                >
-                  <Sidebar />
-                  {children}
-                </Box>
+              <Container 
+                display="flex" 
+                minHeight="100vh"
+                bg="#FAFAFA"
+                paddingX="0"
+                paddingY="0"
+                className={css({
+                  _dark: {
+                    backgroundColor: 'gray.900'
+                  }
+                })}
+              >
+                <Sidebar />
+                {children}
               </Container>
             </Provider>
           </ThemeProvider>
